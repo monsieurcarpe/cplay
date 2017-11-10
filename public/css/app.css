@@ -1,0 +1,247 @@
+html, body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ecf0f1;
+    font-size: 16px;
+}
+
+/* ---- Generic ---- */
+/* Title */
+h2{
+    color: #670133;
+}
+
+/* Separator */
+.separator{
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #85144b;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+.separator span{
+    background-color: #ecf0f1;
+    padding:0 10px;
+}
+
+/* SearchBox */
+.search-box{
+    margin-bottom: 10px;
+}
+.search-box .search-box_input{
+    margin: 0;
+}
+.search-box .search-box_button{
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+    background-color: #79BEFF;
+    color: white;
+}
+
+/* Data */
+.type{
+    color: white;
+    background-color: #79BEFF;
+    padding: 5px 10px;
+}
+.shortReview{
+    color: white;
+    background-color: #FFDB6D;
+    padding: 5px 10px;
+}
+
+/* Select */
+option{
+    color: black;
+}
+option[disabled]{
+    color: #CACACD;
+}
+
+/* ---- Main ---- */
+header .header-content{
+    line-height: 40px;
+    color: white;
+    min-height: 40px;
+    background-color: #85144b;
+    position: relative;
+    z-index: 999;
+    padding: 0 10px;
+}
+
+header .header-content.main{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 16%, 100% 60%, 89% 100%, 18% 100%, 0 60%, 0 14%);
+    clip-path: polygon(0 0, 100% 0, 100% 16%, 100% 60%, 80% 100%, 20% 100%, 0 60%, 0 14%);
+}
+
+header h1{
+    color: white;
+    font-family: 'Saira', sans-serif;
+}
+
+header .header-content a{
+    color: white;
+    text-decoration: none;
+    padding: 4px 10px;
+    margin: 0 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+header .header-content a.login{
+    background-color: #79BEFF;
+}
+
+header .header-content .avatar{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+}
+
+.container{
+    padding: 10px 20px 20px;
+}
+
+footer{
+    color: white;
+    background-color: #85144b;
+    padding: 10px 0;
+}
+
+
+/* ---- Specific ---- */
+/* Game */
+.game{
+    min-height: 400px;
+}
+
+.game .content{
+    padding-right: 30px;
+}
+
+.game .content h2{
+    display: inline-block;
+    padding-right: 10px;
+}
+.game .content .type{
+    vertical-align: super;
+}
+
+.game .more{
+    padding: 10px 0;
+}
+
+.game .more i{
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-right: 5px;
+    color: #85144b;
+}
+
+.game .reviews{
+    margin: 30px 0;
+}
+
+.game .review{
+    background-color: #A22A65;
+    display: inline-block;
+    color: white;
+    font-size: 2.2rem;
+}
+
+.game .review h3{
+    font-size: 0.8rem;
+    background-color: #85144B;
+    padding: 5px 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.game .picture img{
+    width: 100%;
+}
+
+/* List */
+.games .item{
+    display: inline-block;
+    width: 80%;
+    margin: 20px 0;
+}
+
+.games .item h3{
+    font-size: 1.4rem;
+    background-color: #85144B;
+    color: white;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.games .item .picture{
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.games .item .picture .type{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8rem;
+}
+
+.games .item .picture .shortReview{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.8rem;
+}
+
+.comment{
+    margin-top: 20px;
+}
+.comment .name{
+    font-weight: 700;
+}
+.comment .time{
+    font-size: 0.9rem;
+}
+
+/* Contest */
+.contest .box{
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    background-color: #85144B;
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Saira', sans-serif;
+    display: block;
+}
+
+.contest .box.disable{
+    cursor: not-allowed;
+    background-color: grey;
+    pointer-events: none;
+}
+
+.disable:hover{
+    transform: rotate(50deg);
+    transform: scale(0.9);
+    transition: all 0.2s;
+}
+
+/* Add */
+.add .cell{
+    padding: 0 20px;
+}
+
+.add h3{
+    font-size: 1.4rem;
+    color: #85144B;
+    margin-bottom: 0;
+    padding: 0 0 10px;
+}
+
+.add input[type=submit]{
+    background-color: #85144B;
+}
